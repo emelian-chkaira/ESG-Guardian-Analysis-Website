@@ -1,0 +1,175 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 220 20% 97%;
+    --foreground: 220 40% 13%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 220 40% 13%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 40% 13%;
+
+    --primary: 217 71% 25%;
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 215 25% 93%;
+    --secondary-foreground: 220 40% 13%;
+
+    --muted: 215 25% 93%;
+    --muted-foreground: 215 16% 47%;
+
+    --accent: 215 25% 93%;
+    --accent-foreground: 220 40% 13%;
+
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 214 20% 89%;
+    --input: 214 20% 89%;
+    --ring: 217 71% 25%;
+
+    --radius: 0.625rem;
+
+    /* ESG Pillar colors */
+    --pillar-e: 152 60% 36%;
+    --pillar-e-light: 152 50% 94%;
+    --pillar-s: 271 55% 52%;
+    --pillar-s-light: 271 50% 95%;
+    --pillar-g: 217 71% 40%;
+    --pillar-g-light: 217 50% 94%;
+
+    /* Status colors */
+    --status-pass: 152 60% 36%;
+    --status-pass-light: 152 50% 93%;
+    --status-fail: 0 72% 51%;
+    --status-fail-light: 0 60% 95%;
+    --status-missing: 38 92% 50%;
+    --status-missing-light: 38 80% 94%;
+
+    /* Score gauge */
+    --score-bg: 217 71% 25%;
+    --score-gradient-from: 217 71% 30%;
+    --score-gradient-to: 199 89% 48%;
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 222 47% 6%;
+    --foreground: 210 40% 95%;
+
+    --card: 222 47% 9%;
+    --card-foreground: 210 40% 95%;
+
+    --popover: 222 47% 9%;
+    --popover-foreground: 210 40% 95%;
+
+    --primary: 199 89% 48%;
+    --primary-foreground: 222 47% 6%;
+
+    --secondary: 217 33% 17%;
+    --secondary-foreground: 210 40% 95%;
+
+    --muted: 217 33% 17%;
+    --muted-foreground: 215 20% 65%;
+
+    --accent: 217 33% 17%;
+    --accent-foreground: 210 40% 95%;
+
+    --destructive: 0 63% 31%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217 33% 17%;
+    --input: 217 33% 17%;
+    --ring: 199 89% 48%;
+
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  }
+}
+
+@layer utilities {
+  .gradient-score {
+    background: linear-gradient(135deg, hsl(var(--score-gradient-from)), hsl(var(--score-gradient-to)));
+  }
+
+  .gradient-hero {
+    background: linear-gradient(135deg, hsl(217 71% 20%), hsl(217 71% 30%));
+  }
+
+  .pillar-badge-e {
+    background: hsl(var(--pillar-e-light));
+    color: hsl(var(--pillar-e));
+  }
+
+  .pillar-badge-s {
+    background: hsl(var(--pillar-s-light));
+    color: hsl(var(--pillar-s));
+  }
+
+  .pillar-badge-g {
+    background: hsl(var(--pillar-g-light));
+    color: hsl(var(--pillar-g));
+  }
+
+  .status-badge-pass {
+    background: hsl(var(--status-pass-light));
+    color: hsl(var(--status-pass));
+  }
+
+  .status-badge-fail {
+    background: hsl(var(--status-fail-light));
+    color: hsl(var(--status-fail));
+  }
+
+  .status-badge-missing {
+    background: hsl(var(--status-missing-light));
+    color: hsl(var(--status-missing));
+  }
+
+  @keyframes score-fill {
+    from { stroke-dashoffset: 283; }
+  }
+
+  .animate-score-fill {
+    animation: score-fill 1.5s ease-out forwards;
+  }
+
+  @keyframes fade-up {
+    from { opacity: 0; transform: translateY(12px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  .animate-fade-up {
+    animation: fade-up 0.5s ease-out forwards;
+    opacity: 0;
+  }
+}

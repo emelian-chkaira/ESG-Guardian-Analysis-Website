@@ -1,0 +1,46 @@
+<svg width="1280" height="720" viewBox="0 0 1280 720" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="1280" height="720" rx="28" fill="#09131A"/>
+<rect x="36" y="36" width="1208" height="648" rx="24" fill="#0F172A" stroke="#1E293B"/>
+<text x="70" y="96" fill="#F8FAFC" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="700">ESG Guardian Validation Workflow</text>
+<text x="70" y="132" fill="#94A3B8" font-family="Arial, Helvetica, sans-serif" font-size="20">A GitHub-ready overview of how reports move through the app</text>
+<rect x="70" y="190" width="250" height="360" rx="20" fill="#111C2A" stroke="#334155"/>
+<rect x="355" y="190" width="250" height="360" rx="20" fill="#111C2A" stroke="#334155"/>
+<rect x="640" y="190" width="250" height="360" rx="20" fill="#111C2A" stroke="#334155"/>
+<rect x="925" y="190" width="250" height="360" rx="20" fill="#111C2A" stroke="#334155"/>
+<circle cx="195" cy="246" r="26" fill="#0F766E"/>
+<path d="M195 230L210 236V251C210 262.5 204.3 272.4 195 278C185.7 272.4 180 262.5 180 251V236L195 230Z" fill="#CCFBF1"/>
+<text x="110" y="314" fill="#F8FAFC" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700">1. Upload PDF</text>
+<text x="98" y="356" fill="#94A3B8" font-family="Arial, Helvetica, sans-serif" font-size="18">Drag and drop a bank</text>
+<text x="100" y="382" fill="#94A3B8" font-family="Arial, Helvetica, sans-serif" font-size="18">sustainability report.</text>
+<text x="102" y="436" fill="#E2E8F0" font-family="Arial, Helvetica, sans-serif" font-size="17">Accepted input:</text>
+<text x="102" y="464" fill="#2DD4BF" font-family="Arial, Helvetica, sans-serif" font-size="17">.pdf documents</text>
+<circle cx="480" cy="246" r="26" fill="#1D4ED8"/>
+<rect x="466" y="232" width="28" height="28" rx="6" fill="#DBEAFE"/>
+<text x="375" y="314" fill="#F8FAFC" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700">2. Extract Text</text>
+<text x="386" y="356" fill="#94A3B8" font-family="Arial, Helvetica, sans-serif" font-size="18">`pdf.js` parses pages</text>
+<text x="389" y="382" fill="#94A3B8" font-family="Arial, Helvetica, sans-serif" font-size="18">locally in the browser.</text>
+<text x="387" y="436" fill="#E2E8F0" font-family="Arial, Helvetica, sans-serif" font-size="17">Privacy mode:</text>
+<text x="387" y="464" fill="#38BDF8" font-family="Arial, Helvetica, sans-serif" font-size="17">no data leaves the machine</text>
+<circle cx="765" cy="246" r="26" fill="#F59E0B"/>
+<rect x="752" y="236" width="26" height="20" rx="4" fill="#FEF3C7"/>
+<text x="667" y="314" fill="#F8FAFC" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700">3. Run Rules</text>
+<text x="662" y="356" fill="#94A3B8" font-family="Arial, Helvetica, sans-serif" font-size="18">19 regex-based checks</text>
+<text x="665" y="382" fill="#94A3B8" font-family="Arial, Helvetica, sans-serif" font-size="18">scan ESG disclosures.</text>
+<text x="672" y="436" fill="#E2E8F0" font-family="Arial, Helvetica, sans-serif" font-size="17">Coverage:</text>
+<text x="672" y="464" fill="#FBBF24" font-family="Arial, Helvetica, sans-serif" font-size="17">ESRS, EBA, Taxonomy</text>
+<circle cx="1050" cy="246" r="26" fill="#7C3AED"/>
+<rect x="1037" y="234" width="26" height="24" rx="4" fill="#EDE9FE"/>
+<text x="954" y="314" fill="#F8FAFC" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700">4. Review Results</text>
+<text x="961" y="356" fill="#94A3B8" font-family="Arial, Helvetica, sans-serif" font-size="18">Dashboard groups pass,</text>
+<text x="950" y="382" fill="#94A3B8" font-family="Arial, Helvetica, sans-serif" font-size="18">fail, and missing items.</text>
+<text x="957" y="436" fill="#E2E8F0" font-family="Arial, Helvetica, sans-serif" font-size="17">Output:</text>
+<text x="957" y="464" fill="#C4B5FD" font-family="Arial, Helvetica, sans-serif" font-size="17">pillar cards and rule detail</text>
+<path d="M320 370H355" stroke="#334155" stroke-width="8" stroke-linecap="round"/>
+<path d="M605 370H640" stroke="#334155" stroke-width="8" stroke-linecap="round"/>
+<path d="M890 370H925" stroke="#334155" stroke-width="8" stroke-linecap="round"/>
+<path d="M342 358L356 370L342 382" stroke="#2DD4BF" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M627 358L641 370L627 382" stroke="#38BDF8" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M912 358L926 370L912 382" stroke="#F59E0B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="70" y="588" width="1105" height="54" rx="16" fill="#0B1720" stroke="#1E293B"/>
+<text x="98" y="622" fill="#94A3B8" font-family="Arial, Helvetica, sans-serif" font-size="18">Frameworks used: CSRD / ESRS E1-S1-G1, EBA Pillar 3 ITS, EU Taxonomy, Gender Balance Directive, Pay Transparency Directive, RED II</text>
+</svg>
