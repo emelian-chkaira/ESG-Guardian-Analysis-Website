@@ -10,6 +10,20 @@ Client-side ESG compliance validation for EU banking sustainability reports. The
 
 ![ESG Guardian (Environmental, Social, and Governance) preview](./public/social-preview.svg)
 
+## Application Screenshots
+
+The following screenshots are taken from the deployed ESG Guardian experience and complement the existing preview and workflow images.
+
+| Dashboard Overview | Findings And Metrics | Rule Validation View |
+| --- | --- | --- |
+| ![Dashboard overview](./public/screenshot1.jpg) | ![Findings and metrics](./public/screenshot2.jpg) | ![Rule validation view](./public/screenshot3.jpg) |
+
+**Screenshot Highlights**
+
+- `screenshot1.jpg`: top-level dashboard with the Banco BPM example dataset, upload area, score gauge, and summary statistics
+- `screenshot2.jpg`: findings panels and pillar breakdown with pass/fail visibility in the live UI
+- `screenshot3.jpg`: detailed rules validation table and methodology-driven compliance review flow
+
 ## Overview
 
 ESG Guardian (Environmental, Social, and Governance) helps showcase and validate how a sustainability report aligns with major EU disclosure frameworks used in banking. It is designed as a browser-first experience with no backend dependency.
@@ -20,13 +34,14 @@ ESG Guardian (Environmental, Social, and Governance) helps showcase and validate
 - Highlights pass, fail, and missing disclosures
 - Surfaces rule detail, extracted snippets, and legal sources
 
-## Demo Example
+## Live Demo
 
-The seeded demo state in the UI uses `Banco_BPM_Sustainability_Report_2024.pdf` as the example report.
+The project is deployed and publicly accessible, with the seeded UI currently showcasing the Banco BPM 2024 sustainability reporting example.
 
-- Example report: `Banco_BPM_Sustainability_Report_2024.pdf`
+- Live website: [ESG Guardian Demo](https://papaya-bublanina-0721f3.netlify.app)
+- Example report used in the live demo: `Banco_BPM_Sustainability_Report_2024.pdf`
 - Official source page: [Banco BPM Group Sustainability Reporting](https://gruppo.bancobpm.it/sustainability/non-financial-reports/)
-- UI note: the app now highlights this example report and links directly to the official Banco BPM sustainability reporting page
+- In-app note: the interface explicitly highlights the Banco BPM example dataset and links users to the official reporting page
 
 ## Key Features
 
