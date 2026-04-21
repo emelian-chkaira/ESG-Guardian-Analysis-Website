@@ -65,6 +65,44 @@ The project is deployed and publicly accessible, with the seeded UI currently sh
 
 ![Validation workflow](./public/readme-workflow.svg)
 
+## Next Steps
+
+The next step for ESG Guardian is to add a **second validation layer** on the **server side** using a **self-hosted LLM**.
+
+Right now, the app works fully in the browser:
+
+- it extracts text from the PDF locally
+- it checks the report using clear rules, regex patterns, and thresholds
+- it shows results that are easy to trace back to the legal source
+
+This works well for structured checks, but some ESG disclosures are written in a more narrative way. In those cases, a simple rule may miss the meaning even if the report is actually saying the right thing.
+
+That is why the next version will add a second layer that helps read the report in a more contextual way.
+
+### What This Second Layer Will Do
+
+- review selected parts of the report on the server side
+- use a self-hosted model instead of an external API
+- support the current rule-based results, not replace them
+- help understand qualitative disclosures that are harder to catch with regex alone
+- provide clearer explanations when a disclosure looks complete, incomplete, or uncertain
+- flag unclear cases for manual review
+
+### Why It Matters
+
+- it can improve checks for narrative ESG sections
+- it can reduce missed disclosures when companies use different wording
+- it can create a stronger hybrid approach: rule-based validation plus semantic review
+- it keeps the project moving toward a more realistic compliance support tool
+
+### Planned Validation Flow
+
+- **Step 1**: client-side PDF extraction and rule-based validation
+- **Step 2**: server-side review with a self-hosted LLM
+- **Step 3**: combined results with evidence, explanations, and conflict checks
+
+In simple terms, the goal is to keep the current system transparent and traceable, while adding a smarter second pass for the parts that need more context.
+
 ## Tech Stack
 
 - `React 18`
