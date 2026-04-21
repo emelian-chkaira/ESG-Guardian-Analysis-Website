@@ -10,7 +10,7 @@ const Header = () => (
               <Shield className="h-7 w-7 text-primary-foreground" />
             </div>
             <h1 className="text-2xl md:text-3xl font-extrabold text-primary-foreground tracking-tight">
-              ESG Compliance Validator
+              ESG Guardian (Environmental, Social, and Governance)
             </h1>
           </div>
           <p className="text-primary-foreground/70 text-sm md:text-base max-w-xl">

@@ -5,7 +5,7 @@
 <circle cx="132" cy="132" r="28" fill="#0F766E"/>
 <path d="M132 112L148 118V134C148 147.255 141.168 159.536 132 165C122.832 159.536 116 147.255 116 134V118L132 112Z" fill="#CCFBF1"/>
 <text x="176" y="124" fill="#F8FAFC" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="700">ESG Guardian</text>
-<text x="176" y="160" fill="#94A3B8" font-family="Arial, Helvetica, sans-serif" font-size="20">Client-side ESG reporting compliance validator for EU banking disclosures</text>
+<text x="176" y="160" fill="#94A3B8" font-family="Arial, Helvetica, sans-serif" font-size="20">Environmental, Social, and Governance compliance validator for EU banking disclosures</text>
 <rect x="84" y="208" width="420" height="282" rx="20" fill="#0F172A" stroke="#334155"/>
 <text x="114" y="252" fill="#E2E8F0" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700">Compliance Snapshot</text>
 <circle cx="214" cy="338" r="78" stroke="#14B8A6" stroke-width="18"/>

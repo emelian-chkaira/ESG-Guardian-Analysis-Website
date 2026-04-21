@@ -1,4 +1,4 @@
-# ESG Guardian
+# ESG Guardian (Environmental, Social, and Governance)
 
 ![Vite](https://img.shields.io/badge/Vite-5.4-646CFF?logo=vite&logoColor=white)
 ![React](https://img.shields.io/badge/React-18-149ECA?logo=react&logoColor=white)
@@ -8,11 +8,11 @@
 
 Client-side ESG compliance validation for EU banking sustainability reports. The app extracts text from uploaded PDFs, evaluates disclosure and threshold-based rules, and presents a clean dashboard for Environmental, Social, and Governance review.
 
-![ESG Guardian preview](./public/social-preview.svg)
+![ESG Guardian (Environmental, Social, and Governance) preview](./public/social-preview.svg)
 
 ## Overview
 
-ESG Guardian helps showcase and validate how a sustainability report aligns with major EU disclosure frameworks used in banking. It is designed as a browser-first experience with no backend dependency.
+ESG Guardian (Environmental, Social, and Governance) helps showcase and validate how a sustainability report aligns with major EU disclosure frameworks used in banking. It is designed as a browser-first experience with no backend dependency.
 
 - Runs entirely in the browser using `pdfjs-dist`
 - Applies 19 rule checks across ESG pillars
