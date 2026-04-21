@@ -1,7 +1,11 @@
 import type { ValidationData } from "@/types/esg";
 
+export const EXAMPLE_REPORT_NAME = "Banco_BPM_Sustainability_Report_2024.pdf";
+export const EXAMPLE_REPORT_SOURCE_LABEL = "Banco BPM Group Sustainability Reporting";
+export const EXAMPLE_REPORT_SOURCE_URL = "https://gruppo.bancobpm.it/sustainability/non-financial-reports/";
+
 export const BANCO_BPM_DATA: ValidationData = {
-  pdf_name: "Banco_BPM_Sustainability_Report_2024.pdf",
+  pdf_name: EXAMPLE_REPORT_NAME,
   word_count: 142350,
   results: {},
   pillars: {

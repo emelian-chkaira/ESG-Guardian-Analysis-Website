@@ -20,6 +20,14 @@ ESG Guardian (Environmental, Social, and Governance) helps showcase and validate
 - Highlights pass, fail, and missing disclosures
 - Surfaces rule detail, extracted snippets, and legal sources
 
+## Demo Example
+
+The seeded demo state in the UI uses `Banco_BPM_Sustainability_Report_2024.pdf` as the example report.
+
+- Example report: `Banco_BPM_Sustainability_Report_2024.pdf`
+- Official source page: [Banco BPM Group Sustainability Reporting](https://gruppo.bancobpm.it/sustainability/non-financial-reports/)
+- UI note: the app now highlights this example report and links directly to the official Banco BPM sustainability reporting page
+
 ## Key Features
 
 - PDF upload with instant local processing

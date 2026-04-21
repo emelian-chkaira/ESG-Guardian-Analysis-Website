@@ -7,9 +7,14 @@ import KeyFindings from "@/components/KeyFindings";
 import RulesTable from "@/components/RulesTable";
 import PdfUpload from "@/components/PdfUpload";
 import LegalFrameworks from "@/components/LegalFrameworks";
-import { BANCO_BPM_DATA } from "@/data/sampleData";
+import {
+  BANCO_BPM_DATA,
+  EXAMPLE_REPORT_NAME,
+  EXAMPLE_REPORT_SOURCE_LABEL,
+  EXAMPLE_REPORT_SOURCE_URL,
+} from "@/data/sampleData";
 import type { ValidationData } from "@/types/esg";
-import { FileText, Database, Scale } from "lucide-react";
+import { FileText, Database, ExternalLink, Scale } from "lucide-react";
 
 const Index = () => {
   const [data, setData] = useState<ValidationData>(BANCO_BPM_DATA);
@@ -39,6 +44,21 @@ const Index = () => {
             <Scale className="h-4 w-4" />
             19 rules · 6 legal frameworks
           </span>
+        </div>
+
+        <div className="animate-fade-up rounded-xl border border-primary/20 bg-primary/5 px-4 py-3 text-sm text-foreground" style={{ animationDelay: "0.03s" }}>
+          <span className="font-semibold">Example dataset:</span>{" "}
+          This demo currently showcases <span className="font-mono font-medium">{EXAMPLE_REPORT_NAME}</span> from Banco BPM.
+          {" "}
+          <a
+            href={EXAMPLE_REPORT_SOURCE_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-1 font-medium text-primary hover:underline"
+          >
+            Visit {EXAMPLE_REPORT_SOURCE_LABEL}
+            <ExternalLink className="h-3.5 w-3.5" />
+          </a>
         </div>
 
         {/* PDF Upload + Score row */}
