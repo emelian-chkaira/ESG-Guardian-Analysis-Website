@@ -4,6 +4,7 @@
 
 @layer base {
   :root {
+    color-scheme: light;
     --background: 220 20% 97%;
     --foreground: 220 40% 13%;
 
@@ -66,6 +67,7 @@
   }
 
   .dark {
+    color-scheme: dark;
     --background: 222 47% 6%;
     --foreground: 210 40% 95%;
 
@@ -93,6 +95,21 @@
     --border: 217 33% 17%;
     --input: 217 33% 17%;
     --ring: 199 89% 48%;
+
+    /* Keep status and pillar surfaces dark-aware instead of pastel in dark mode */
+    --pillar-e: 152 62% 58%;
+    --pillar-e-light: 152 38% 14%;
+    --pillar-s: 271 75% 70%;
+    --pillar-s-light: 271 34% 16%;
+    --pillar-g: 210 95% 72%;
+    --pillar-g-light: 217 40% 16%;
+
+    --status-pass: 152 62% 58%;
+    --status-pass-light: 152 38% 14%;
+    --status-fail: 0 85% 68%;
+    --status-fail-light: 0 38% 15%;
+    --status-missing: 42 96% 66%;
+    --status-missing-light: 42 42% 16%;
 
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
@@ -123,6 +140,10 @@
 
   .gradient-hero {
     background: linear-gradient(135deg, hsl(217 71% 20%), hsl(217 71% 30%));
+  }
+
+  .dark .gradient-hero {
+    background: linear-gradient(135deg, hsl(222 47% 10%), hsl(217 33% 18%));
   }
 
   .pillar-badge-e {
