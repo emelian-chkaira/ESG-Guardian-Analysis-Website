@@ -1,5 +1,9 @@
 # ESG Guardian (Environmental, Social, and Governance)
 
+Scores EU bank sustainability reports against CSRD/ESRS rules, in the browser. Built with React and TypeScript, deployed on Netlify.
+
+**[Live demo](https://papaya-bublanina-0721f3.netlify.app)** · **[Portfolio website](https://emelianchkaira.netlify.app)**
+
 ![Vite](https://img.shields.io/badge/Vite-5.4-646CFF?logo=vite&logoColor=white)
 ![React](https://img.shields.io/badge/React-18-149ECA?logo=react&logoColor=white)
 ![TypeScript](https://img.shields.io/badge/TypeScript-5.8-3178C6?logo=typescript&logoColor=white)
